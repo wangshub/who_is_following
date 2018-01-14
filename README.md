@@ -33,7 +33,7 @@
 ## 操作步骤
 
 1. 获取目标用户如`https://github.com/wangshub?page=1&tab=followers`的所有followers；
-2. 改变`page`编号，便利所有用户；
+2. 改变`page`编号，遍历所有用户；
 3. 提取用户关键信息，保存成`csv`文件；
 4. 数据清洗，过滤；
 5. 利用[pyecharts](https://github.com/pyecharts/pyecharts)绘图；
@@ -47,7 +47,7 @@
 
 排除掉没有填写地点信息的用户，将中文转化成pinyin后，词云如下
 
-![](https://ws1.sinaimg.cn/large/c3a916a7gy1fngljy93kjj20rs0nwtdv.jpg)
+![](./pics/places.jpg)
 
 用户基本上都是来自`北京、上海、深圳`等地
 
@@ -55,7 +55,7 @@
 
 如果看用户是否活跃，肯定是看`contributions`啦
 
-![](https://ws1.sinaimg.cn/large/c3a916a7gy1fngln8yfgij20m80b4t94.jpg)
+![](./pics/contributions.png)
 
 可以看出超过一般多的用户，去年的贡献度都在都在 **1~50** 之间，新的一年要加油啦。其中一年贡献最多的用户是[@dragon-yuan](https://github.com/dragon-yuan), 在2017年有整整 **4,197** 个贡献度，不多说了，前去关注一波。
 
@@ -63,12 +63,13 @@
 
 哇，有大牛，别拦着我，我要去点关注了
 
-![](https://ws1.sinaimg.cn/large/c3a916a7gy1fngmed2kovj20m80b474m.jpg)
+![](./pics/followers.png)
 
 ### 用户仓库数量分析
 
 通过爬取用户的仓库数量，进行统计如下
-![](https://ws1.sinaimg.cn/large/c3a916a7gy1fnglp9onenj20m80b4jrs.jpg)
+
+![](./pics/repos.png)
 
 可以看到一个有意思的现象，有少数的人仓库数量超过了**1000**，打开这几位仁兄的github主页，大部分是fork的项目，其中仓库最多的用户有**13100个**仓库，叫[@ProgrammerAndHacker](https://github.com/ProgrammerAndHacker)，他是这么介绍自己的
 ```
@@ -82,16 +83,16 @@ Best programmers and hackers are here:
 
 都说点击star是一个好习惯，
 
-![](https://ws1.sinaimg.cn/large/c3a916a7gy1fngm1vx9oij20m80b4dg8.jpg)
+![](./pics/stars.png)
 
 不得不说，github上面还是有点赞狂魔的，这位老铁[@chenruibin](https://github.com/chenruibin)一共点击了`10100`个赞，真是好习惯～
 
 ### 用户 following 分析
 
-![](https://ws1.sinaimg.cn/large/c3a916a7gy1fngm814cbgj20m80b43yw.jpg)
+![](./pics/following.png)
 
 同样是[@ProgrammerAndHacker](https://github.com/ProgrammerAndHacker)这位仁兄，一共follow了**19600**个用户，严重怀疑是不是机器人。
 
 ## 最后
 
-不搞了，我要去写论文了TAT，要代码的，来这里自己找
+不搞了，我要去写论文了TAT，要代码的，来这里找[https://github.com/wangshub/who_is_following](https://github.com/wangshub/who_is_following)
